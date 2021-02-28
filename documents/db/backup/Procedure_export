@@ -1,0 +1,28 @@
+1 Open phpMyAdmin
+2. Select database
+3. clic Export tab
+4. choose option Custom
+5. Add  :
+
+Add CREATE DATABASE / USE statement
+Add DROP TABLE / VIEW / PROCEDURE / FUNCTION / EVENT / TRIGGER statement
+
+6. Export file
+7. Add before Create database :
+
+DROP SCHEMA IF EXISTS `platz`;
+
+
+
+Example :
+
+--
+-- Delete DB
+--
+DROP SCHEMA IF EXISTS `platz`;
+
+--
+-- Database: `platz`
+--
+CREATE DATABASE IF NOT EXISTS `platz` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `platz`;
